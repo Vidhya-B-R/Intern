@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Ticket Booking</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5f99db;
+        }
+
+        .form-box {
+            width: 500px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 12px;
+        }
+
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color:white;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h2>Train Ticket Booking</h2>
+
+    <form>
+
+        <label>Passenger Name:</label>
+        <input type="text" name="name" required>
+        <br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+        <br>
+
+        <label>From:</label>
+        <select name="from">
+            <option>Select Station</option>
+            <option>Bengaluru</option>
+            <option>Mysuru</option>
+            <option>Shivamogga</option>
+            <option>Mangaluru</option>
+            <option>Hubballi</option>
+        </select>
+        <br>
+
+        <label>To:</label>
+        <select name="to">
+            <option>Select Station</option>
+            <option>Bengaluru</option>
+            <option>Mysuru</option>
+            <option>Shivamogga</option>
+            <option>Mangaluru</option>
+            <option>Hubballi</option>
+        </select>
+        <br>
+
+        <label>Journey Date:</label>
+        <input type="date" name="date" required>
+        <br>
+
+        <label>Passengers:</label>
+        <input type="number" name="passengers" min="1" max="10">
+        <br>
+
+        <label>Class:</label>
+        <select name="class">
+            <option>AC First Class</option>
+            <option>AC 2 Tier</option>
+            <option>AC 3 Tier</option>
+            <option>Sleeper</option>
+            <option>General</option>
+        </select>
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        <label>Payment:</label>
+        <select name="payment">
+            <option>UPI</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>Net Banking</option>
+        </select>
+        <br>
+
+        <label>Address:</label>
+        <textarea rows="3" placeholder="Enter address"></textarea>
+        <br>
+
+        <label>
+            <input type="checkbox" required>
+            I agree to the terms and conditions
+        </label>
+
+        <div class="buttons">
+            <input type="submit" value="Book Ticket">
+            <input type="reset" value="Cancel">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
